@@ -15,16 +15,10 @@ def load_data(filename):
     return groups
 
 def quiz_one(groups):
-    question_count = 0
-    for group in groups:
-        question_count += len(set().union(*group))
-    return question_count
+    return sum([len(set().union(*group)) for group in groups])
 
 def quiz_two(groups):
-    question_count = 0
-    for group in groups:
-        question_count += len(set(group[0]).intersection(*group))
-    return question_count
+    return sum([len(set(group[0]).intersection(*group)) for group in groups])
 
 if __name__ == '__main__':
     input = load_data('day_6.txt')
