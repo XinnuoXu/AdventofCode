@@ -1,2 +1,2 @@
-# AdventofCode2018
+# AdventofCode
 To see the puzzles, please visit https://adventofcode.com
